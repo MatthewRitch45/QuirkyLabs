@@ -1,0 +1,35 @@
+
+
+
+/* Button */
+button  {
+    background: var(--color-button);
+    color: var(--color-text);
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    -webkit-transition: transform 0.2s, background 0.2s;
+    -moz-transition: transform 0.2s, background 0.2s;
+    -ms-transition: transform 0.2s, background 0.2s;
+    -o-transition: transform 0.2s, background 0.2s;
+}
+button:hover {
+    background: var(--color-button-hover);
+    transform: scale(1.05) translateY(0.01rem);
+    -webkit-transform: scale(1.05) translateY(0.01rem);
+    -moz-transform: scale(1.05) translateY(0.01rem);
+    -ms-transform: scale(1.05) translateY(0.01rem);
+    -o-transform: scale(1.05) translateY(0.01rem);
+}
+
+button:active {
+    background: var(--color-button);
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}

@@ -1,0 +1,16 @@
+@media (max-width: 1023px) {
+  #magicButton {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  #magicButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+
+  }
+}
