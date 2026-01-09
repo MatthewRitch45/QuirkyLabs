@@ -1,6 +1,13 @@
-const button = document.getElementById("magicButton");
 
-button.addEventListener("click", () => {
+export function setupButtonAlert() {
+    const button = document.getElementById("magicButton");
+
+    if (!button) {
+    console.warn("magicButton not found in DOM");
+    return;
+    }
+
+    button.addEventListener("click", () => {
     const messages = [
         "✨ Magic happened!",
         "🧠 You learned something!",
@@ -12,4 +19,5 @@ button.addEventListener("click", () => {
         messages[Math.floor(Math.random() * messages.length)];
 
     alert(randomMessage);
-})
+    })
+}
